@@ -1,0 +1,99 @@
+# Mini Feedback App
+
+A small full-stack application that allows users to submit feedback and view all submitted feedbacks.
+---------------------------------------------------------------------------------------------------------------
+# Features
+
+Frontend (React):
+
+Feedback form to submit feedback.
+
+List of submitted feedbacks displayed below the form.
+---------------------------------------------------------------------------------------------------------------
+# Backend (Django):
+
+REST API to store and retrieve feedback.
+----------------------------------------------------------------------------------------------------------------
+# Data storage:
+
+If MongoDB is available, feedback is stored in MongoDB.
+
+feedback is stored in a JSON file inside the server folder.
+----------------------------------------------------------------------------------------------------------------
+# Tech Stack
+
+Frontend: React (Vite)
+
+Backend: Python Django + Django REST Framework
+
+Database: MongoDB and JSON file 
+-----------------------------------------------------------------------------------------------------------------
+# Setup Instructions
+
+# Backend Setup
+
+# Clone the repository:
+
+git clone <your-repo-url>
+cd server
+----------------------------------------------------------------------
+# Create a virtual environment and activate it:
+
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+
+
+-----------------------------------------------------------------------
+# Install backend dependencies:
+
+pip install -r requirements.txt
+
+-----------------------------------------------------------------------
+# Run migrations:
+
+python manage.py migrate
+
+-----------------------------------------------------------------------
+# Start the backend server:
+
+python manage.py runserver
+
+
+The backend API will be available at http://127.0.0.1:8000/api/.
+-------------------------------------------------------------------------
+# Frontend Setup
+
+Navigate to the frontend folder:
+
+cd client/feedback-frontend/
+
+-------------------------------------------------------------------------
+# Install dependencies:
+
+npm install
+
+--------------------------------------------------------------------------
+# Start the frontend development server:
+
+npm run dev
+
+
+The frontend will be available at http://localhost:5173/ (or the port Vite shows).
+----------------------------------------------------------------------------------
+# Usage
+
+Open the frontend in a browser.
+
+Fill in the feedback form and submit.
+
+Submitted feedbacks appear below the form in a list.
+----------------------------------------------------------------------------------
+# Notes
+
+Data storage:
+
+If MongoDB is connected, feedbacks are stored in MongoDB.
+
+Otherwise, feedbacks are saved in a JSON file inside the server folder.
+-----------------------------------------------------------------------------------
